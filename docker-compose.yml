@@ -1,0 +1,11 @@
+services:
+  react_development:
+    build: .
+    container_name: react_development
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    command: npm start
+
